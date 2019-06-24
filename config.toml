@@ -13,7 +13,7 @@ googleAnalytics = ""
 [params]
   baseFragment = "/"
   template = ""
-  baseSegment = "/cranach"
+  baseSegment = "/cranach-grafiken"
   copyright = "Medieninformatik an der TH Köln"
   ansprechpartner = "Ansprechpartner <a href=\"https://www.th-koeln.de/personen/christian.noss/\">Christian Noss</a>"
   impressum = "<a href=\"https://www.th-koeln.de/hochschule/impressum_8159.php\">Impressum</a>"
