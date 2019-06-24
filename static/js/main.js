@@ -8,17 +8,22 @@ console.log('main-2.js')
 
 console.log('main.js')
 
-var zoomable = document.querySelector('.js-zoomable')
-if (zoomable) {
-  let imgUrl = document.querySelector('img').src.replace(/.*imageserver/, '/img/graphics')
-  imgUrl = imgUrl.replace(/-l\./, '-xl.')
-  zoomable.querySelector('img').classList.add('is-faded')
-  var viewer = OpenSeadragon({
-    id: zoomable.id,
-    prefixUrl: '/libs/openseadragon/images/',
-    tileSources: {
-      type: 'image',
-      url: imgUrl
+var imageZoom = (function () {
+  return function () {
+    let zoomable = document.querySelector('.js-zoomable')
+    if (zoomable) {
+      let imgUrl = document.querySelector('img').src.replace(/-l\./, '-xl.')
+      zoomable.querySelector('img').classList.add('is-faded')
+      var viewer = OpenSeadragon({
+        id: zoomable.id,
+        prefixUrl: baseSegment + '/libs/openseadragon/images/',
+        tileSources: {
+          type: 'image',
+          url: imgUrl
+        }
+      })
     }
-  })
-}
+  }
+})()
+
+imageZoom()
