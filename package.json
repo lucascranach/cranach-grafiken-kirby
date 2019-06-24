@@ -1,0 +1,45 @@
+{
+  "name": "cda-graphics",
+  "version": "1.0.0",
+  "description": "Entwurf CDA Grafiken",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "hugo server --disableFastRender --ignoreCache",
+    "mgulp": "npx babel gulpfile.babel.js --out-file gulpfile.js",
+    "static": "hugo --cleanDestinationDir && gulp all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/th-koeln/mi-website-2018.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "del": "^3.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-hash": "^4.2.2",
+    "gulp-postcss": "^6.0.22",
+    "gulp-purgecss": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "postcss-preset-env": "^5.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/th-koeln/mi-website-2018/issues"
+  },
+  "homepage": "https://github.com/th-koeln/mi-website-2018#readme",
+  "directories": {
+    "doc": "docs"
+  }
+}

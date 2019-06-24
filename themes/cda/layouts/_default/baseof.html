@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ $globalParams := . }}
+{{ $scratch := newScratch }}
+<head>
+  {{ partial "system/head/head.html" $globalParams }}
+</head>
+
+<body data-kind="{{.Kind}}" data-baseref="{{.Site.Params.BaseFragment}}/{{.Dir}}" data-permalink="{{.RelPermalink}}">
+  
+  {{ partial "system/header/header.html" $globalParams }}
+
+  {{ block "main" . }} {{ end }}
+
+  {{ partial "system/scripts/scripts.html" $globalParams }}
+</body>
+</html>

@@ -1,0 +1,43 @@
+baseurl = "https://th-koeln.github.io/"
+title = "CDA Demo"
+theme = "cda"
+languageCode = "de-de"
+sectionPagesMenu = "main"
+publishDir = "docs"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+[params]
+  baseFragment = "/"
+  template = ""
+  copyright = "Medieninformatik an der TH Köln"
+  ansprechpartner = "Ansprechpartner <a href=\"https://www.th-koeln.de/personen/christian.noss/\">Christian Noss</a>"
+  impressum = "<a href=\"https://www.th-koeln.de/hochschule/impressum_8159.php\">Impressum</a>"
+  imageserver = "http://lucascranach.org/imageserver"
+
+[taxonomies]
+  tag = "tags"
+  
+
+[outputs]
+  page = ["HTML"]
+  section = ["HTML"]
+  home = ["html"]
+
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "box"
+
+# Default JPEG quality setting. Default is 75.
+quality = 75
+
+# Anchor used when cropping pictures.
+# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+# Smart Cropping is content aware and tries to find the best crop for each image.
+# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+anchor = "smart"

@@ -1,0 +1,20 @@
+dt.cda-item-information{
+  display: block;
+  float: left;
+  min-width: 10px;
+  padding: 0.3rem 0;
+  font-weight: bold;
+
+  &::after{
+    
+      content: ":";
+      display: inline-block;
+      padding-right: 0.3rem;
+  
+  }
+}
+dd.cda-item-information {
+  border-bottom: solid 1px #b5b5b5;
+  padding: 0.3rem 0;
+}
+

@@ -1,0 +1,7 @@
+{
+  "Dated": { "label": {"de": "Datiert", "en": "Dated"}, "key": "dated"},
+  "ObjectName": { "label": {"de": "Objektname", "en": "Object Name"}, "key": "objectname"},
+  "Classification": { "label": {"de": "Klassifikation", "en": "Classification"}, "key": "classification"},
+  "Dimensions": { "label": {"de": "Maße", "en": "Dimensions"}, "key": "dimensions"},
+  "Inventarnummer": { "label": {"de": "Inventarnummer", "en": "Inventarnummer"}, "key": "inventarnummer"}
+}

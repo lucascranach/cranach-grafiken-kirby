@@ -1,0 +1,29 @@
+<!-- Close button -->
+<!--button class="close-button" aria-label="Close menu" type="button" data-close>
+<span aria-hidden="true">&times;</span>
+</button-->
+
+<!-- Menu -->
+<ul class="vertical menu">
+
+    {{ $currentPage := . }} {{ range .Site.Menus.main }}
+    <li><a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main " .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>{{ end }}
+
+</ul>
+
+<!--div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+    <div class="sidebar-content">
+        <h1 class="sidebar-heading"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        {{ range .Site.Params.sidebarAbout }}
+        <p class="sidebar-p">{{ . | safeHTML }}</p>
+        {{ end }}
+        <ul class="sidebar-menu">
+            {{ $url := .Site.BaseURL }} {{ range .Site.Params.navlinks }}
+            <li><a href="{{ $url }}{{ .url }}">{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+        {{ partial "social_buttons_in_sidebar.html" . }}
+
+
+    </div>
+</div-->

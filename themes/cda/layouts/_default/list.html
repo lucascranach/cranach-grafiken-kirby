@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ $params := . }}
+
+<span class="primary label">list-template</span>
+<span class="primary label">{{.Dir}}</span>
+<div class="grid-x grid-margin-x">
+    <div class="cell large-8">
+        <h1>{{.Title}}</h1>
+        {{.LinkTitle}} // {{.Params.Type}} // {{.Params.Kuerzel}}
+		
+    </div>
+</div>
+
+{{ range .Pages }}
+
+{{ end }}
+
+{{ range .Sections }}
+
+{{ end }}
+{{ end }}

@@ -1,0 +1,27 @@
+{{- $path := .Get "path" -}}
+{{- $files := readDir $path -}}
+{{- $scratch := newScratch -}}
+
+
+
+
+{{- range $files }}
+{{- $scratch.Set "path" $path -}}
+{{- $scratch.Add "path" "/" -}}
+{{- $scratch.Add "path" .Name -}}
+{{- $itemDir := $scratch.Get "path" -}}
+{{- $itemFiles := readDir $itemDir -}}
+
+<h2>Shortcode {{ .Name }}</h2>
+{{- range $itemFiles }}
+{{- $scratch.Set "itemDir" $itemDir -}}
+{{- $scratch.Add "itemDir" "/" -}}
+{{- $scratch.Add "itemDir" .Name -}}
+{{- $itemPath := $scratch.Get "itemDir" -}}
+
+{{- if in $itemPath "html" }}
+{{- $f := readFile $itemPath -}}
+{{ .Render $itemPath }}
+{{- end }}
+{{- end }}
+{{- end }}

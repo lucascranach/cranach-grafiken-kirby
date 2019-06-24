@@ -1,0 +1,32 @@
+---
+Type: 'virtual'
+Oid: 940729
+ObjectName: 'Holzschnitt: http://vocab.getty.edu/aat/300041405'
+Inventarnummer: 'LC_HVI-56_79'
+Title: 'Hl. Christophorus'
+Link: 'hl-christophorus'
+Zuschreibung: 'Lucas Cranach der Ältere'
+Dated: 1506
+DateBeginn: 1501
+DateEnd: 1511
+Longtext: 'Cranach depicts St Christopher here in a mountainous landscape with a broad river that creates great pictorial depth. His face clearly expresses the extreme effort required to transport the infant Christ across the river. A hermit stands with a lantern on the shore in the right background. The electoral coats of arms suspended from the boughs at the upper left suggest that the woodcut was commissioned by Friedrich III the Wise.
+The block was initially dated 1506, cut in the line block, but this date was later removed, corresponding with the second state. Competition between Cranach and his contemporaries led to the development of the chiaroscuro woodcut, a tonal block, which simulated heightening by leaving parts of the paper white and it may have prompted him to deliberately antedate the first state by two years. Certain other arguments also cast doubt on the date. Cranach was not entitled to use the coat of arms with a serpent, seen on this print, until 1508 when it was granted to him by Duke Friedrich and in fact, it is not displayed on any other print before 1509. The most likely sequence of events was that Cranach learnt of the advances made in Augsburg on the invention of the tone block soon after his return from the Netherlands in 1508, and then produced his own version in the "St Christopher" and "Venus" woodcuts around 1509.
+
+1st state [Dodgson 1911, 295-296, 61a-c] [Hollstein 56.79]:
+a. with the date 1506. Chiaroscuro woodcut printed from two blocks, in red-brown
+b. as above. Outline block only.
+
+2nd state [Hollstein 56.79]:
+a. the date below the serpent removed. Outline block only. At top: "AdImaginem Divi/ Christophori."; below: "In Imaginem Divi Christophori" and 26 verses by Johann Stigel in two columns 1554
+b. as a. but with the date 1556
+c. with 86 lines letterpress to the right and the date 1556
+d. with the date 1560 [Schuchardt 1870, 224]
+e. the date removed. Chiaroscuro, printed in both orange-brown and slate grey.  
+
+According to [Geisberg 1930, 594]: I. the light reflex on the knee is white; II. the light reflex on the knee has a line in the centre'
+Classification: 'Druckgrafik'
+Dimensions: 'Blockmaß: 28,1 x 19,7 cm (+ - 5 mm)
+[cda 2019]
+'
+BildURL: 'G_AT_A_DG1929-104'
+---

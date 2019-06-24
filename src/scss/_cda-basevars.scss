@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* CDA Vars
+Make use of Renard 
+Renard R5: 10, 16, 25, 40, 63, 100 
+R10: 10, 12.5, 16 ,20 , 25, 31.5, 40, 50, 63, 80, 100
+-----------------------------------------------------------------------------*/
+
+
+/* Spaces ...........................*/
+$space-h-s:  10px;
+$space-h-m:  16px;
+$space-h-l:  25px ;
+$space-h-xl: 40px;
+
+$space-v-s:  10px;
+$space-v-m:  16px;
+$space-v-l:  25px;
+$space-v-xl: 40px;
+$space-v-xxl: 63px;
+
+
+/* Colors ...........................*/
+$cda-darker:      hsl(0,0,10);
+$cda-dark:        hsl(0,0,16);
+$cda-dark-medium: hsl(0,0,25);
+
+$cda-lighter:      hsl(0,0,90);
+$cda-light:        hsl(0,0,84);
+$cda-light-medium: hsl(0,0,75);
+

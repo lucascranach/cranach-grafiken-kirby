@@ -1,0 +1,11 @@
+.cda-img-holder{
+  @extend .is-square;
+
+  border-top: solid 1px $cda-dark-medium;
+  
+  > img{
+    object-fit: contain;
+  }
+
+  
+} 

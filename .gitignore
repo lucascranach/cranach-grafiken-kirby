@@ -1,0 +1,27 @@
+/node_modules
+/test/js
+/test/browsertest/js
+/test/fixtures/temp-cache-fixture
+/benchmark/js
+/benchmark/fixtures
+/examples/**/dist
+/coverage
+.DS_Store
+*.log
+.idea
+.vscode
+.eslintcache
+package-lock.json
+
+# Hugo default output directory
+/public
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store

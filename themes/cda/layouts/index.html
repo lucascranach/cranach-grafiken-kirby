@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{ $params := . }}
+{{ $scratch := newScratch }}
+{{ $imageserver := .Site.Params.imageserver}}
+
+<div class="container is-fluid">
+  <div class="columns is-multiline">
+    {{ range $item := .Site.Data.graphics.cdaGraphicsVirtualObjects }}
+    {{ if $item.BildURL }}
+    <div class="column is-one-third-desktop is-one-fifth-widescreen is-half-tablet">
+      <div class="card bm--card-equal-height">
+        <div class="card-image">
+          <a href="graphics/{{$item.Link}}">
+            {{ $src := print $imageserver  "/" $item.BildURL "/01_Overall/" $item.BildURL "_Overall-s.tif.jpg" }}
+            {{ partial "a/cda-img-holder/cda-img-holder.html" (dict "src" $src)}}
+          </a>
+        </div>
+        <div class="card-content">
+          <div class="media">
+
+            <div class="media-content">
+              <h2 class="title is-6">{{$item.Title.de}}<br></h2>
+              {{ if gt $item.Dated 0 }}
+              <p>{{$item.Dated}}</p>
+              {{end}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,14 @@
+.cda-img-holder {
+  @extend .is-square;
+  /* border: rgba(255,255,255,0.2) solid 1px;
+  background-color: rgba(255,255,255,0.05); */
+  >img {
+    object-fit: contain;
+  }
+
+  > .openseadragon-container{
+    position: absolute !important;
+  }
+
+
+}

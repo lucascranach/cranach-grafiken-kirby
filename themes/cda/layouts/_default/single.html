@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ $imageserver := .Site.Params.imageserver}}
+{{ $src := print $imageserver  "/" .Params.BildURL "/01_Overall/" .Params.BildURL "_Overall-l.tif.jpg" }}
+
+{{ $pageScratch := newScratch }}
+{{ $pageScratch.Set "Params" .Params }}
+{{ $displayFields := .Site.Data.graphics.displayFields }}
+
+
+<div class="container">
+  <div class="columns">
+    <div class="column">
+      {{ partial "a/cda-img-holder/cda-img-holder.html" (dict "src" $src "zoomSrc" $src "class" "js-zoomable" "id" .Params.inventarnummer )}}
+    </div>
+    <div class="column js-drift-target">
+      <h1 class="title">{{ .Params.Title }}</h1>
+      <h2 class="subtitle">{{.Params.Zuschreibung}}</h2>
+
+      <div class="content">
+        {{.Params.Longtext | safeHTML}}
+      </div>
+
+      <div class="content">
+      {{ $data := $pageScratch.Get "Params" }}
+      {{ partial "m/cda-item-information/cda-item-information.html" (dict "fields" $displayFields "data" $data) }}
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+{{ end }}

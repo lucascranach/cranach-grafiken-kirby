@@ -1,0 +1,24 @@
+{{ $scratch := newScratch }}
+{{ $scratch.Set "src" "http://via.placeholder.com/400x700" }}
+{{ $scratch.Set "id" false }}
+{{ $scratch.Set "class" false }}
+
+{{ if .src }}
+{{ $scratch.Set "src" .src }}
+{{ end }}
+
+{{ if .id }}
+{{ $scratch.Set "id" .id }}
+{{ end }}
+
+{{ if .class }}
+{{ $scratch.Set "class" .class }}
+{{ end }}
+
+{{ $src := $scratch.Get "src" }}
+{{ $id := $scratch.Get "id" }}
+{{ $class := $scratch.Get "class" }}
+
+<figure {{ with $id }}id="{{$id}}"{{ end }} class="image cda-img-holder {{ with $class }}{{$class}}{{ end }}">
+  <img src="{{$src}}" data-zoom="{{.zoomSrc}}">
+</figure>

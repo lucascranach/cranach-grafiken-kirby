@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+
+
+/* CDA Imports
+-----------------------------------------------------------------------------*/
+
+@import "./src/bulma/bulma.sass";
+@import "_cda-basevars";
+@import "_cda-icons";
+
+
+  
+
+
+/* Bulma overrides
+-----------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf');
+}
+$family-sans-serif: "IBMPlexSans";  
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf');
+}
+$family-monospace: "IBMPlexMono";  
+
+// Set your brand colors
+$background: #222; 
+
+// Navbar
+$navbar-background-color:$background;
+$navbar-box-shadow-color: transparent; 
+
+$radius-small: 0;
+$radius: 0;
+$radius-large: 6px !default
+
+// Update some of Bulma's component variables
+$body-background-color:$background;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "./src/bulma/sass/utilities/_all.sass";
+@import "./src/bulma/sass/base/_all.sass";
+@import "./src/bulma/sass/elements/button.sass";
+@import "./src/bulma/sass/elements/container.sass";
+@import "./src/bulma/sass/elements/form.sass";
+@import "./src/bulma/sass/elements/title.sass";
+@import "./src/bulma/sass/components/navbar.sass";
+@import "./src/bulma/sass/layout/hero.sass";
+@import "./src/bulma/sass/layout/section.sass";
+
+
+
+
+
+/* BulmaJS Extensions
+-----------------------------------------------------------------------------*/
+
+.tabs-content li {
+  display: none;
+  list-style: none;
+}
+
+.tabs-content li.is-active {
+  display: block;
+}
+
+
+
+
+/* Schrott: muss aufgeräumt werden
+-----------------------------------------------------------------------------*/
+
+hr{
+  background-color: $cda-dark-medium;
+  height: 1px;
+  margin-top: $space-v-xl;
+  margin-bottom: $space-v-xxl;
+}
+
+.cda_logo{
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.bm--card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.bm--card-equal-height .card-footer {
+  margin-top: auto;
+}

@@ -1,0 +1,24 @@
+.pl-wrap{
+  > .pl-desc{
+    margin-bottom: $space-v-l;
+    padding-left: $space-h-l;
+    border-left: solid 3px $primary;
+  }
+
+  div.columns > div.column > h4{
+    margin-bottom: $space-v-m;
+    color: $cda-lighter;
+  }
+
+  div.columns{
+    margin-bottom: $space-v-xl;
+  }
+
+  div.columns > div.column > pre{
+    background-color: $cda-dark-medium;
+
+    & > code{
+      font-family: $family-monospace;
+    }
+  }
+}

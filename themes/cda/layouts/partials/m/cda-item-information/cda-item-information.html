@@ -1,0 +1,10 @@
+{{ $fields := .fields }}
+{{ $data := .data }}
+<dl class="cda-item-information">
+    {{ range $field := $fields }}
+    {{ $label := $field.label.de }}
+    {{$value := index $data $field.key }}
+    <dt>{{$label}}</dt>
+    <dd>{{$value}}</dd>
+    {{ end }}
+</dl>
