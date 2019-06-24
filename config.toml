@@ -1,4 +1,4 @@
-baseurl = "https://th-koeln.github.io/cranach/"
+baseurl = "https://th-koeln.github.io/cranach-grafiken/"
 title = "CDA Demo"
 theme = "cda"
 languageCode = "de-de"
